@@ -1,5 +1,9 @@
+---
+permalink: /slug/
+---
+
 {% macro card(event) %}
-  <div class="border-4 border-pink-700 rounded-md p-5 mt-5">
+  <div class=" flex flex-col justify-center items-center border-4 border-pink-700 rounded-md p-5 mt-5">
     <h2 class="text-2xl font-bold">{{ event.title }}</h2>
     <p class="text-gray-700">{{ event.date }}</p>
     <img src="{{ event.image }}" alt="{{ event.id }}" class="w-40">

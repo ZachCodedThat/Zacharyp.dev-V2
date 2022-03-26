@@ -1,19 +1,19 @@
 ---
 title: Discord Events
 layout: "layouts/base.njk"
-permalink: 
-    events: "/events/"
+
 ---
 
 {% import "components/event-card.njk" as eventCard %}
 
 <div class="flex flex-col items-center justify-center mt-10">
-  <div class="flex flex-col">
+  <div class="flex flex-col ">
      <h1 class="prose-xl">Discord Community Events</h1>
      <p class="animate-pulse">Served via On Demand Builders</p>
   </div>
-
-{% for event in events %}
-  {{ eventCard.card(event) }}
-{% endfor %}
+  <div class="grid grid-cols-4 gap-4" >
+    {% for event in events %}
+    {{ eventCard.card(event) }}
+    {% endfor %}
+  </div>
 </div>
