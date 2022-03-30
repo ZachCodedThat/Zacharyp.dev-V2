@@ -7,7 +7,7 @@
     "dev:css": "npx tailwindcss -i src/styles.css -o dist/styles.css -w",
     "dev:11ty": "eleventy --config=_eleventy/config.js --serve --watch",
     "dev": "node_modules/.bin/run-p dev:*",
-    "build:css": "NODE_ENV=production npx tailwindcss -i src/styles.css -o dist/styles.css -m",
+    "build:css": "npx tailwindcss -i src/styles.css -o dist/styles.css -m",
     "build:11ty": "eleventy --config=_eleventy/config.js --output=dist",
     "build": "node_modules/.bin/run-s build:*"
   },
